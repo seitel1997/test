@@ -11,4 +11,4 @@ import pandas as pd
 
 st.title('BONJORNO')
 
-
+pd.read_csv(Bastar Craton.csv)
