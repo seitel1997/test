@@ -17,7 +17,7 @@ sely=st.selectbox('Selection',['Si','Mg','K','Fe'])
 
 fig, ax = plt.subplots()
 
-ax.scatter(x,df[sely])
+ax.scatter(df['Al'],df[sely])
 
 st.pyplot(fig)           
            
