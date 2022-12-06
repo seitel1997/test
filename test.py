@@ -13,9 +13,11 @@ st.title('BONJORNO')
 
 df=pd.read_csv('Bastar Craton.csv')
 
-el1 ='MnO'
-el2 = 'SiO2'
-plt.scatter(df[el1],df[el2])
-plt.xlabel(el1)
-plt.ylabel(el2)
-plt.show()
+sely=st.selectbox('Selection',['Si','Mg','K','Fe'])
+
+fig, ax = plt.subplots()
+
+ax.scatter(x,df[sely])
+
+st.pyplot(fig)           
+           
