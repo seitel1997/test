@@ -9,9 +9,7 @@ import numpy as np
 
 st.title('BONJORNO')
 
+option = st.selectbox(
+    'wie geht´s?',
+    ('gut', 'mäh', 'schlecht'))
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
