@@ -13,11 +13,10 @@ st.title('BONJORNO')
 
 df=pd.read_csv('Bastar Craton.csv')
 
-sely=st.selectbox('Selection',['Si','Mg','K','Fe'])
+sely=st.selectbox('Selection',['Sm/Nd','Rb/Sr'])
 
 fig, ax = plt.subplots()
 
-ax.scatter(df['Al'],df[sely])
 
 st.pyplot(fig)           
            
